@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+  color: #1a1a1a;
+}
+
+/**************** Nav Section ****************/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+  color: white;
+  padding: 14px 40px;
+  border-bottom: 3px solid #8b0d2f;
+}
+
+nav p {
+  margin: 0;
+  font-weight: 600;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d94a6a;
+}
+
+/**************** Footer Section ****************/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  color: white;
+  padding: 18px;
+  margin-top: 40px;
+  border-top: 3px solid #8b0d2f;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+footer a:hover {
+  color: #d94a6a;
+}
+
+/**************** Splash Page ****************/
+
+header {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #190006,
+    #4b0015,
+    #7c0a2b,
+    #2a000d
+  );
+
+  color: white;
+  padding: 35px 20px;
+  box-shadow: inset 0 -15px 35px rgba(0, 0, 0, 0.35);
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 7px solid #e7e7e7;
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 0 6px rgba(255, 255, 255, 0.08),
+    0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.address {
+  text-align: center;
+  font-weight: 700;
+  color: #3e3e3e;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 18px 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.tagline {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 0 25px;
+  text-align: center;
+  line-height: 1.7;
+  color: #444444;
+  font-size: 17px;
+}
+
+/**************** Sections ****************/
+
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  width: 92%;
+  margin: 30px auto;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    #8b0d2f,
+    transparent
+  );
+}
+
+section {
+  padding: 20px 35px;
+}
+
+section h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #7c0a2b;
+  font-size: 24px;
+  font-weight: 700;
+  border-left: 5px solid #7c0a2b;
+  padding-left: 12px;
+  margin-bottom: 18px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px 25px;
+  background-color: #eeeeee;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+section dt {
+  font-weight: 700;
+  color: #222222;
+}
+
+section dd {
+  margin: 0;
+  color: #555555;
+  text-align: right;
+}
+
+section ul {
+  list-style-type: square;
+  line-height: 1.8;
+  color: #3a3a3a;
+}
+
+section a {
+  color: #8b0d2f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section a:hover {
+  color: #d13d61;
+  text-decoration: underline;
+}
+
+/**************** Projects ****************/
+
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  border-top: 5px solid #7c0a2b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.22);
+}
+
+.card h3 {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+  color: #222222;
+  font-size: 20px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #bbbbbb;
+}
+
+.card ul {
+  padding-left: 22px;
+}
+
+/**************** Responsiveness ****************/
+
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/**************** Contact Page ****************/
+
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  min-height: 150px;
+}
