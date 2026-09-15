@@ -27,10 +27,12 @@ nav p {
 nav a {
   color: white;
   text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
 nav a:hover {
   color: #d94a6a;
+  text-shadow: 0 0 8px rgba(217, 74, 106, 0.5);
 }
 
 /**************** Footer Section ****************/
@@ -54,10 +56,12 @@ footer a {
   color: white;
   text-decoration: none;
   margin: 0 6px;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
 footer a:hover {
   color: #d94a6a;
+  text-shadow: 0 0 8px rgba(217, 74, 106, 0.5);
 }
 
 /**************** Splash Page ****************/
@@ -199,6 +203,14 @@ section a:hover {
   text-decoration: underline;
 }
 
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 30px;
+  background-color: #eeeeee;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
 /**************** Projects ****************/
 
 .three-col {
@@ -240,7 +252,9 @@ section a:hover {
   border-radius: 8px;
   margin-bottom: 15px;
   border: 1px solid #bbbbbb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
+
 
 .card ul {
   padding-left: 22px;
@@ -258,6 +272,12 @@ section a:hover {
     width: 90%;
     margin: auto;
   }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+  }
 }
 
 /**************** Contact Page ****************/
@@ -265,15 +285,22 @@ section a:hover {
 .one-col {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 12px;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border-top: 5px solid #7c0a2b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
 }
 
 input {
   padding: 10px;
   border: 1px solid #999999;
   border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
 textarea {
@@ -281,4 +308,29 @@ textarea {
   border: 1px solid #999999;
   border-radius: 5px;
   min-height: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  resize: vertical;
+}
+
+button {
+  background-color: #7c0a2b;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #a3133b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
 }
